@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="css/scholarshipform.css" />
+
+    <!----===== Iconscout CSS ===== -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <title>Scholarship Regisration Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>Scholarship Application Form</header>
+
+      <form action="#">
+        <div class="form first">
+          <div class="details personal">
+            <span class="title">Personal Information</span>
+
+            <div class="fields">
+              <div class="input-field">
+                <label for="fullName">Full Name</label>
+                <input
+                  type="text"
+                  id="fullName"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="dob">Date of Birth</label>
+                <input
+                  type="date"
+                  id="dob"
+                  placeholder="Enter birth date"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="gender">Gender</label>
+                <select id="gender" required>
+                  <option disabled selected>Select gender</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Others</option>
+                </select>
+              </div>
+
+              <div class="input-field1">
+                <label for="category">Category</label>
+                <select id="category" required>
+                  <option disabled selected>Select category</option>
+                  <option>SC</option>
+                  <option>ST</option>
+                  <option>MBC</option>
+                  <option>BC</option>
+                  <option>OBC</option>
+                </select>
+              </div>
+
+              <div class="input-field1">
+                <label for="maritalStatus">Marital Status</label>
+                <select id="maritalStatus" required>
+                  <option disabled selected>Select marital status</option>
+                  <option>Single</option>
+                  <option>Married</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="details ID">
+            <span class="title">Contact Details</span>
+
+            <div class="fields">
+              <div class="input-field">
+                <label for="mobileNumber">Mobile Number</label>
+                <input
+                  type="number"
+                  id="mobileNumber"
+                  placeholder="Enter mobile number"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="panNumber">Pan Number</label>
+                <input
+                  type="text"
+                  id="panNumber"
+                  placeholder="Enter pan number"
+                  required
+                />
+              </div>
+            </div>
+
+            <button type="button" class="nextBtn" onclick="showSecondForm()">
+              <span class="btnText">Next</span>
+              <i class="uil uil-navigator"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="form second">
+          <div class="details address">
+            <span class="title">Address Details</span>
+
+            <div class="fields">
+              <div class="input-field">
+                <label for="currentAddress">Current Address</label>
+                <input
+                  type="text"
+                  id="currentAddress"
+                  placeholder="Current address"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="currentCity">City</label>
+                <input
+                  type="text"
+                  id="currentCity"
+                  placeholder="Enter your city"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="currentDistrict">District</label>
+                <input
+                  type="text"
+                  id="currentDistrict"
+                  placeholder="Enter your district"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="currentState">State</label>
+                <input
+                  type="text"
+                  id="currentState"
+                  placeholder="Enter your state"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="currentNationality">Nationality</label>
+                <input
+                  type="text"
+                  id="currentNationality"
+                  placeholder="Enter nationality"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="currentPincode">PinCode</label>
+                <input
+                  type="number"
+                  id="currentPincode"
+                  placeholder="Enter pincode"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="fields">
+              <div class="input-field">
+                <label for="permanentAddress">Permanent Address</label>
+                <input
+                  type="text"
+                  id="permanentAddress"
+                  placeholder="Permanent address"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="permanentCity">City</label>
+                <input
+                  type="text"
+                  id="permanentCity"
+                  placeholder="Enter your city"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="permanentDistrict">District</label>
+                <input
+                  type="text"
+                  id="permanentDistrict"
+                  placeholder="Enter your district"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="permanentState">State</label>
+                <input
+                  type="text"
+                  id="permanentState"
+                  placeholder="Enter your state"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="permanentNationality">Nationality</label>
+                <input
+                  type="text"
+                  id="permanentNationality"
+                  placeholder="Enter nationality"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="permanentPincode">PinCode</label>
+                <input
+                  type="number"
+                  id="permanentPincode"
+                  placeholder="Enter pincode"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="buttons">
+              <button type="button" class="backBtn" onclick="showFirstForm()">
+                <i class="uil uil-navigator"></i>
+                <span class="btnText">Back</span>
+              </button>
+              <button type="button" class="nextBtn" onclick="showThirdForm()">
+                <span class="btnText">Next</span>
+                <i class="uil uil-navigator"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="form third">
+          <div class="details education">
+            <span class="title">Education Details</span>
+
+            <div class="fields">
+              <div class="input-field">
+                <label for="highestQualification">Highest Qualification</label>
+                <select
+                  id="highestQualification"
+                  onchange="showEducationFields()"
+                  required
+                >
+                  <option disabled selected>Select qualification</option>
+                  <option value="sslc">SSLC</option>
+                  <option value="hsc">HSC</option>
+                  <option value="diploma">Diploma</option>
+                  <option value="ug">UG</option>
+                  <option value="pg">PG</option>
+                </select>
+              </div>
+
+              <div class="input-field">
+                <label for="hscInstitute">HSC Institute Name</label>
+                <input
+                  type="text"
+                  id="hscInstitute"
+                  placeholder="Enter HSC institute name"
+                />
+              </div>
+              <div class="input-field">
+                <label for="hscPercentage">HSC Percentage</label>
+                <input
+                  type="number"
+                  id="hscPercentage"
+                  placeholder="Enter HSC percentage"
+                />
+              </div>
+              <div class="input-field">
+                <label for="hscYear">HSC Passed Out Year</label>
+                <input
+                  type="number"
+                  id="hscYear"
+                  placeholder="Enter HSC passed out year"
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="sslcInstitute">SSLC Institute Name</label>
+                <input
+                  type="text"
+                  id="sslcInstitute"
+                  placeholder="Enter SSLC institute name"
+                />
+              </div>
+              <div class="input-field">
+                <label for="sslcPercentage">SSLC Percentage</label>
+                <input
+                  type="number"
+                  id="sslcPercentage"
+                  placeholder="Enter SSLC percentage"
+                />
+              </div>
+              <div class="input-field">
+                <label for="sslcYear">SSLC Passed Out Year</label>
+                <input
+                  type="number"
+                  id="sslcYear"
+                  placeholder="Enter SSLC passed out year"
+                />
+              </div>
+            </div>
+            <div class="buttons">
+              <button type="button" class="backBtn" onclick="showSecondForm()">
+                <i class="uil uil-navigator"></i>
+                <span class="btnText">Back</span>
+              </button>
+              <button type="button" class="nextBtn" onclick="showFifthForm()">
+                <span class="btnText">Next</span>
+                <i class="uil uil-navigator"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="form fourth">
+          <div class="details education">
+            <span class="title">Education Details</span>
+
+            <div class="fields">
+              <!-- Diploma Fields -->
+              <div
+                id="diplomaFields"
+                class="qualificationFields"
+                style="display: none"
+              >
+                <div class="input-field">
+                  <label for="diplomaInstitute">Diploma Institute Name</label>
+                  <input
+                    type="text"
+                    id="diplomaInstitute"
+                    placeholder="Enter Diploma institute name"
+                  />
+                </div>
+                <div class="input-field">
+                  <label for="diplomaCourse">Diploma Course</label>
+                  <input
+                    type="text"
+                    id="diplomaCourse"
+                    placeholder="Enter Diploma course"
+                  />
+                </div>
+                <div class="input-field">
+                  <label for="diplomaPercentage">Diploma Percentage</label>
+                  <input
+                    type="number"
+                    id="diplomaPercentage"
+                    placeholder="Enter Diploma percentage"
+                  />
+                </div>
+                <div class="input-field">
+                  <label for="diplomaYear">Diploma Passed Out Year</label>
+                  <input
+                    type="number"
+                    id="diplomaYear"
+                    placeholder="Enter Diploma passed out year"
+                  />
+                </div>
+              </div>
+
+              <!-- UG/PG Course Field -->
+              <div
+                id="ugPgCourseField"
+                class="input-field qualificationFields"
+                style="display: none"
+              >
+                <label for="ugPgDegree">Select Degree</label>
+                <select id="ugPgDegree">
+                  <option disabled selected>Select Degree</option>
+                  <!-- Add options for degree courses -->
+                  <optgroup label="Undergraduate">
+                    <option value="ba">BA</option>
+                    <option value="bcom">BCom</option>
+                    <option value="bsc">BSc</option>
+                    <option value="bca">BCA</option>
+                    <option value="be">BE</option>
+                    <option value="btech">BTech</option>
+                  </optgroup>
+                  <optgroup label="Postgraduate">
+                    <option value="ma">MA</option>
+                    <option value="mcom">MCom</option>
+                    <option value="msc">MSc</option>
+                    <option value="mca">MCA</option>
+                  </optgroup>
+                </select>
+              </div>
+
+              <!-- UG Fields -->
+              <div
+                id="ugFields"
+                class="qualificationFields"
+                style="display: none"
+              >
+                <div class="input-field">
+                  <label for="ugCourse">UG Course</label>
+                  <input
+                    type="text"
+                    id="ugCourse"
+                    placeholder="Enter UG course"
+                  />
+                </div>
+                <div class="input-field">
+                  <label for="ugInstitute">UG Institute Name</label>
+                  <input
+                    type="text"
+                    id="ugInstitute"
+                    placeholder="Enter UG institute name"
+                  />
+                </div>
+                <div class="input-field">
+                  <label for="ugPercentage">UG Percentage</label>
+                  <input
+                    type="number"
+                    id="ugPercentage"
+                    placeholder="Enter UG percentage"
+                  />
+                </div>
+                <div class="input-field">
+                  <label for="ugYear">UG Passed Out Year</label>
+                  <input
+                    type="number"
+                    id="ugYear"
+                    placeholder="Enter UG passed out year"
+                  />
+                </div>
+              </div>
+
+              <!-- PG Fields -->
+              <div
+                id="pgFields"
+                class="qualificationFields"
+                style="display: none"
+              >
+                <div class="input-field">
+                  <label for="pgCourse">PG Course</label>
+                  <input
+                    type="text"
+                    id="pgCourse"
+                    placeholder="Enter PG course"
+                  />
+                </div>
+                <div class="input-field">
+                  <label for="pgInstitute">PG Institute Name</label>
+                  <input
+                    type="text"
+                    id="pgInstitute"
+                    placeholder="Enter PG institute name"
+                  />
+                </div>
+                <div class="input-field">
+                  <label for="pgPercentage">PG Percentage</label>
+                  <input
+                    type="number"
+                    id="pgPercentage"
+                    placeholder="Enter PG percentage"
+                  />
+                </div>
+                <div class="input-field">
+                  <label for="pgYear">PG Passed Out Year</label>
+                  <input
+                    type="number"
+                    id="pgYear"
+                    placeholder="Enter PG passed out year"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="buttons">
+              <button type="button" class="backBtn" onclick="showThirdForm()">
+                <i class="uil uil-navigator"></i>
+                <span class="btnText">Back</span>
+              </button>
+              <button type="button" class="nextBtn" onclick="showFifthForm()">
+                <span class="btnText">Next</span>
+                <i class="uil uil-navigator"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="form fifth">
+          <div class="details family">
+            <span class="title">Family Details</span>
+
+            <div class="fields">
+              <div class="input-field">
+                <label for="parentFullName">Parent Full Name</label>
+                <input
+                  type="text"
+                  id="parentFullName"
+                  placeholder="Enter parent name"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="parentRelation">Parent Student Relation</label>
+                <select id="parentRelation" required>
+                  <option disabled selected>Select relation</option>
+                  <option>Father</option>
+                  <option>Mother</option>
+                </select>
+              </div>
+
+              <div class="input-field">
+                <label for="parentMobileNumber">Parent Mobile Number</label>
+                <input
+                  type="number"
+                  id="parentMobileNumber"
+                  placeholder="Enter parent mobile number"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="parentOccupation">Parent Occupation</label>
+                <input
+                  type="text"
+                  id="parentOccupation"
+                  placeholder="Enter parent occupation"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="parentIncome">Parent Income</label>
+                <input
+                  type="number"
+                  id="parentIncome"
+                  placeholder="Enter parent income"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="parentOrganization"
+                  >Parent Working Organisation Name</label
+                >
+                <input
+                  type="text"
+                  id="parentOrganization"
+                  placeholder="Parent working organisation name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="buttons">
+              <button type="button" class="backBtn" onclick="showFourthForm()">
+                <i class="uil uil-navigator"></i>
+                <span class="btnText">Back</span>
+              </button>
+              <button type="submit" class="submitBtn">
+                <span class="btnText">Submit</span>
+                <i class="uil uil-navigator"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="js/scholarshipform.js"></script>
+  </body>
+</html>

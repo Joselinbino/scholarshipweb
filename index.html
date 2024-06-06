@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript" />
+    <meta name="author" content="Ecology Theme" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student-Education-Scholorship</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- Goole Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik:400,500,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/assets/bootstrap.min.css" />
+    <!-- Font awsome CSS -->
+    <link rel="stylesheet" href="css/assets/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/assets/flaticon.css" />
+    <link rel="stylesheet" href="css/assets/magnific-popup.css" />
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="css/assets/owl.theme.css" />
+    <link rel="stylesheet" href="css/assets/animate.css" />
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="css/assets/slick.css" />
+
+    <!-- Mean Menu-->
+    <link rel="stylesheet" href="css/assets/meanmenu.css" />
+    <!-- main style-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/demo.css" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="header_3">
+      <!-- Preloader -->
+      <div id="preloader"></div>
+      <div class="header_top">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-lg-12">
+              <div class="info_wrapper">
+                <div class="contact_info">
+                  <ul class="list-unstyled">
+                    <li>
+                      <i class="flaticon-phone-receiver"></i>+91 8754556006
+                    </li>
+                    <li>
+                      <i class="flaticon-mail-black-envelope-symbol"></i
+                      >visaratech@gmail.com
+                    </li>
+                  </ul>
+                </div>
+                <div class="login_info">
+                  <a href="#" title="" class="sign_up sign-in js-modal-show"
+                    >Sign Up</a
+                  >
+                  <a href="#" title="" class="sign_in join_now js-modal-show"
+                    >Log In</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu_nav">
+        <div class="container">
+          <nav class="navbar navbar-expand-md navbar-light bg-faded">
+            <a class="navbar-brand" href="index.html"
+              ><img src="images/onlylogo.png" alt="logo" />
+              <span>STUDENT EDUCATION SCHOLORSHIP PORTAL</span></a
+            >
+            <div
+              class="collapse navbar-collapse main-menu"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav nav lavalamp ml-auto menu">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link active">Home</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mr-auto search_area">
+              <ul class="navbar-nav mx-auto d-flex">
+                <li class="nav-item search_icon">
+                  <i class="search_btn flaticon-magnifier"></i>
+                  <div id="search">
+                    <button type="button" class="close">×</button>
+                    <form>
+                      <input
+                        type="search"
+                        value=""
+                        placeholder="Search here...."
+                        required
+                      />
+                    </form>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- END NAVBAR -->
+        </div>
+      </div>
+
+      <div class="intro_wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-8 col-lg-8">
+					<div class="intro_text">
+						<h1>Unlock Your Potential with Our Scholarships.</h1>
+						<p>
+							Empowering students to achieve their dreams with financial support and unparalleled opportunities.
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<div class="search_wrapper" style="margin-top: -70px; "> <!-- Adjust margin-top value as needed -->
+						<div class="search-option">
+							<form action="#">
+								<select id="sponsorSelect" class="custom-select" style="width: 600px; margin-top: 25px;">
+									<option value="" selected disabled>Select a Sponsor</option>
+									<option value="TJ SIVANANDA MUDALIAR EDUCATIONAL TRUST">TJ SIVANANDA MUDALIAR EDUCATIONAL TRUST</option>
+									<!-- Add more options for other sponsors -->
+								</select>
+								
+								<div class="submit-btn mt-3">
+									<button type="button" class="text-center" onclick="redirectWithSponsor()">Apply</button>
+								</div>
+								
+								
+							</form>
+
+							<script>
+								function redirectWithSponsor() {
+									var sponsorSelect = document.getElementById("sponsorSelect");
+									var selectedSponsor = sponsorSelect.options[sponsorSelect.selectedIndex].value;
+									
+									// Construct the redirect URL with the selected sponsor's value
+									var redirectUrl = "scholarshipform.html?sponsorName=" + selectedSponsor;
+									
+									// Redirect to the next page
+									window.location.href = redirectUrl;
+								}
+							</script>
+							
+							
+							
+							 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+    </header>
+    <!-- End header -->
+
+    <section class="login_signup_option">
+      <div class="l-modal is-hidden--off-flow js-modal-shopify">
+        <div class="l-modal__shadow js-modal-hide"></div>
+        <div class="login_popup login_modal_body">
+          <div class="Popup_title d-flex justify-content-between">
+            <h2 class="hidden">&nbsp;</h2>
+            <!-- Nav tabs -->
+            <div class="row">
+              <div
+                class="col-12 col-lg-12 col-md-12 col-lg-12 login_option_btn"
+              >
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      data-toggle="tab"
+                      href="#login"
+                      role="tab"
+                      >Login</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      data-toggle="tab"
+                      href="#panel2"
+                      role="tab"
+                      >Register</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-12 col-md-12 col-lg-12">
+                <!-- Tab panels -->
+                <div class="tab-content card">
+                  <!--Login-->
+                  <div
+                    class="tab-pane fade in show active"
+                    id="login"
+                    role="tabpanel"
+                  >
+                    <form action="#">
+                      <div class="row">
+                        <div class="col-12 col-lg-12 col-md-12 col-lg-12">
+                          <div class="form-group">
+                            <label class="control-label">Email</label>
+                            <input
+                              type="email"
+                              class="form-control"
+                              placeholder="Username"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-12 col-md-12 col-lg-12">
+                          <div class="form-group">
+                            <label class="control-label">Password</label>
+                            <input
+                              type="password"
+                              class="form-control"
+                              placeholder="Password"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div
+                          class="col-12 col-lg-12 col-md-12 col-lg-12 d-flex justify-content-between login_option"
+                        >
+                          <a
+                            href="forgot-password.html"
+                            title=""
+                            class="forget_pass"
+                            >Forget Password ?</a
+                          >
+                          <button
+                            type="submit"
+                            class="btn btn-default login_btn"
+                          >
+                            Login
+                          </button>
+                        </div>
+                        <div class="col-12 col-lg-12 col-md-12 col-lg-12">
+                          <div class="social_login">
+                            <div class="social_items">
+                              <button class="google_login google">
+                                Login Google
+                              </button>
+                              <button class="google_login facebook">
+                                Login Facebook
+                              </button>
+                               
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!--/.Panel 1-->
+                  <!--Panel 2-->
+                  <div class="tab-pane fade" id="panel2" role="tabpanel">
+                    <form action="#" class="register">
+                      <div class="row">
+                        <div class="col-12 col-lg-12 col-md-12 col-lg-12">
+                          <div class="form-group">
+                            <label class="control-label">Name</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Username"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-12 col-md-12 col-lg-12">
+                          <div class="form-group">
+                            <label class="control-label">Email</label>
+                            <input
+                              type="email"
+                              class="form-control"
+                              placeholder="Email"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-12 col-md-12 col-lg-12">
+                          <div class="form-group">
+                            <label class="control-label">Password</label>
+                            <input
+                              type="password"
+                              class="form-control"
+                              placeholder="Password"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div
+                          class="col-12 col-lg-12 col-md-12 col-lg-12 d-flex justify-content-between login_option"
+                        >
+                          <button
+                            type="submit"
+                            class="btn btn-default login_btn"
+                          >
+                            Register
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!--/.Panel 2-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Login Signup Option -->
+
+    <section class="about_us">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-7 col-lg-7">
+            <div class="about_title">
+              <span>About Us</span>
+              <h2>Empowering Future Leaders Through Our Scholarship Program</h2>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-5 col-lg-5 p-0">
+            <div class="banner_about">
+              <img
+                src="images/banner/about_thinking.jpg"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row about_content_wrapper">
+          <div class="col-12 col-sm-12 col-md-5 col-lg-5 p-0">
+            <div class="about_banner_down">
+              <img src="images/blog/side_blog_1.jpg" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-7 col-lg-7">
+            <div class="about_content">
+              <p>
+                Our scholarship program is dedicated to identifying and
+                nurturing talented individuals who demonstrate academic
+                excellence, leadership potential, and a commitment to making a
+                positive impact in their communities. We believe that education
+                is a powerful tool for change and are committed to providing the
+                resources and support necessary for our scholars to succeed.
+              </p>
+              <p>
+                Through our scholarships, we offer financial assistance,
+                mentorship opportunities, and access to a network of
+                professionals and peers who can provide guidance and support
+                throughout their educational journey. Our goal is to alleviate
+                the financial burden of higher education and empower our
+                scholars to focus on their studies and personal development.
+              </p>
+               
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="meet_our_team">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="meet_team_wrapper">
+              <div class="sub_title">
+                <h2>Meet Our</h2>
+                <p>
+                  We are proud to introduce our esteemed sponsors who have
+                  generously supported our scholarship program. Their commitment
+                  to education and community development has made it possible
+                  for us to provide valuable opportunities to deserving
+                  students. Our sponsors come from diverse industries and share
+                  a common goal of fostering academic excellence and empowering
+                  the next generation of leaders. We extend our heartfelt
+                  gratitude to all our sponsors for their unwavering support and
+                  dedication.
+                </p>
+              </div>
+              <!-- ends: .section-header -->
+              <div class="envent_all_view">
+                <a href="#" title="">View All</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="testimonial_single">
+              <div class="reviewer_info">
+                <div class="pro_pic_teacher">
+                  <img src="images/team/T.J1.jpeg" alt="2" class="img-fluid" />
+                </div>
+                <div class="name_position">
+                  <span class="name"
+                    ><a href="#" title="">T. J. Govindrajan</a></span
+                  >
+                  <span> </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="testimonial_single">
+              <div class="reviewer_info">
+                <div class="pro_pic_teacher">
+                  <img src="images/team/team_.jpg" alt="2" class="img-fluid" />
+                </div>
+                <div class="name_position">
+                  <span class="name"><a href="#" title="">G.Ravi</a></span>
+                  <span>Designation</span>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="testimonial_single">
+              <div class="reviewer_info">
+                <div class="pro_pic_teacher">
+                  <img src="images/team/team_.jpg" alt="2" class="img-fluid" />
+                </div>
+                <div class="name_position">
+                  <span class="name"
+                    ><a href="#" title="">Name</a></span
+                  >
+                  <span>Designation</span>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <div class="shape_wrapper">
+        <img
+          src="images/shapes/testimonial_2_shpe_2.png"
+          alt=""
+          class="shape_1"
+        />
+        <img
+          src="images/shapes/testimonial_2_shpe_3.png"
+          alt=""
+          class="shape_2"
+        />
+        <img
+          src="images/shapes/testimonial_2_shpe_1.png"
+          alt=""
+          class="shape_3"
+        />
+      </div>
+    </section>
+    <!-- End Meet Our Team -->
+
+    <!-- Footer -->
+    <footer class="footer_3">
+      <div class="container">
+        <div class="footer_top">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="footer_single_col footer_intro">
+                <img src="images/onlylogo2.png" alt="" class="f_logo" /><span
+                  style="color: white"
+                  >EDUCATION SCHOLORSHIP</span
+                >
+                <p>
+                  Our scholarship program is designed to support exceptional
+                  students in their pursuit of higher education. We believe in
+                  fostering talent and providing opportunities for growth and
+                  development.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-2">
+              <div class="footer_single_col">
+                <h3>Useful Links</h3>
+                <ul class="quick_inf0">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="footer_single_col contact">
+                <h3>Contact Us</h3>
+                <p>Visara Tech Solutions (India) Pvt Ltd.</p>
+                <div class="contact_info">
+                  <span>+91 8754556006</span>
+                  <span class="email">visaratech@gmail.com</span>
+                </div>
+                <ul class="social_items d-flex list-unstyled">
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-f fb-icon"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter twitt-icon"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-linkedin-in link-icon"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-instagram ins-icon"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-12">
+              <div class="copyright">
+                <a target="_blank" href="https://www.visaratech.com"
+                  >Visara Tech Solutions</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shapes_bg">
+        <img src="images/shapes/waves.png" alt="" class="shape_3" />
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <section id="scroll-top" class="scroll-top">
+      <h2 class="disabled">Scroll to top</h2>
+      <div class="to-top pos-rtive">
+        <a href="#"><i class="flaticon-right-arrow"></i></a>
+      </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.meanmenu.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!-- Counter Script -->
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
